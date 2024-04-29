@@ -126,6 +126,8 @@ if($total_textos > 0){
 								$flag_quebra_linha = true; // Workaround para script m_sys_en.txt, onde há o texto <cursor_esq>
 							} elseif($atributo_tag == 'c'){ // Cor do texto
 								escreverByte($script, "F1{$valor_tag}");
+							} elseif($atributo_tag == ' '){ // Nome do protagonista
+								escreverByte($script, "20");
 							} elseif($atributo_tag == 'nome'){ // Nome do protagonista
 								escreverByte($script, "FA");
 							} else {
